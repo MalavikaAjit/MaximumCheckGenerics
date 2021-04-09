@@ -9,13 +9,13 @@ public class MaximumCheckTest {
     @Test
     public void givenIntegers_whenMaxAtFirst_ReturnSame() {
         Integer result = maximumCheck.testMax(3,1,2);
-        Assertions.assertEquals(5, result);
+        Assertions.assertEquals(3, result);
     }
 
     @Test
     public void givenIntegers_whenMaxAtSecond_ReturnSame() {
         Integer result = maximumCheck.testMax(2,3,1);
-        Assertions.assertEquals(5, result);
+        Assertions.assertEquals(3, result);
     }
     @Test
     public void givenIntegers_whenMaxAtThird_ReturnSame() {
