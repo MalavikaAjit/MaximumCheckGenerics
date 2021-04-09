@@ -37,5 +37,20 @@ public class MaximumCheckTest {
         Float result = maximumCheck.testMax(1.2f,2.2f,3.2f);
         Assertions.assertEquals(3.2f, result);
     }
+    @Test
+    public void givenStrings_whenMaxAtFirst_ReturnSame() {
+       String result = maximumCheck.testMax("peach","apple","banana");
+        Assertions.assertEquals("peach", result);
+    }
+    @Test
+    public void givenStrings_whenMaxAtSecond_ReturnSame() {
+       String result = maximumCheck.testMax("apple","peach","banana");
+        Assertions.assertEquals("peach", result);
+    }
+    @Test
+    public void givenStrings_whenMaxAtThird_ReturnSame() {
+        String result = maximumCheck.testMax("peach","banana","peach");
+        Assertions.assertEquals("peach", result);
+    }
 
 }
