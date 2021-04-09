@@ -22,5 +22,20 @@ public class MaximumCheckTest {
         Integer result = maximumCheck.testMax(1,2,3);
         Assertions.assertEquals(3, result);
     }
+    @Test
+    public void givenFloats_whenMaxAtFirst_ReturnSame() {
+       Float result = maximumCheck.testMax(3.2f,1.2f,2.2f);
+        Assertions.assertEquals(3.2f, result);
+    }
+    @Test
+    public void givenFloats_whenMaxAtSecond_ReturnSame() {
+        Float result = maximumCheck.testMax(2.2f,3.2f,1.2f);
+        Assertions.assertEquals(3.2f, result);
+    }
+    @Test
+    public void givenFloats_whenMaxAtThird_ReturnSame() {
+        Float result = maximumCheck.testMax(1.2f,2.2f,3.2f);
+        Assertions.assertEquals(3.2f, result);
+    }
 
 }
