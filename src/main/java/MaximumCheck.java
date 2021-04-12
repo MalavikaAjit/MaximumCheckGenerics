@@ -1,36 +1,19 @@
 
-public class MaximumCheck {
+public class MaximumCheck{
 
-    public Integer testMax(Integer x, Integer y, Integer z){
-        int max = x;
+    public static <T extends Comparable<T>> T testMax(T x, T y ,T z){
+        T max = x;
         if(y.compareTo(max) > 0)
             max = y;
         if(z.compareTo(max) > 0)
             max = z;
-        return max;
-    }
-    public Float testMax(Float x, Float y, Float z){
-        Float max = x;
-        if(y.compareTo(max) > 0)
-            max = y;
-        if(z.compareTo(max) > 0)
-            max = z;
-        return max;
-    }
-    public String testMax(String x, String y, String z){
-        String max = x;
-        if(z.compareTo(max) > 0)
-            max = z;
-        if(y.compareTo(max) > 0)
-            max = y;
         return max;
     }
 
     public static void main(String[] args) {
+        System.out.println(MaximumCheck.testMax(3,2,1));
+        System.out.println(MaximumCheck.testMax(3.2, 2.2,1.2));
+        System.out.println(MaximumCheck.testMax("peach","banana","apple"));
 
-        MaximumCheck maximumCheck = new MaximumCheck();
-        System.out.println(maximumCheck.testMax(1, 2, 3));
-        System.out.println(maximumCheck.testMax(3.2f, 2.2f, 1.2f));
-        System.out.println(maximumCheck.testMax("Apple","peach","banana"));
     }
 }
