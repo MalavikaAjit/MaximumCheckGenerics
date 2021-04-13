@@ -1,64 +1,70 @@
-import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class MaximumCheckTest {
 
-   // MaximumCheck maximumCheck = new MaximumCheck();
-
     @Test
     public void givenIntegers_whenMaxAtFirst_ReturnSame() {
-        MaximumCheck<Integer> maximumCheck = new MaximumCheck<Integer>(3,2,1);
-        Integer result = maximumCheck.testMax();
-        Assertions.assertEquals(3, result);
+        MaximumCheck<Integer> integerMaximumCheck = new MaximumCheck<Integer>();
+        Integer [] args = {5,3,2,1};
+        Integer result = integerMaximumCheck.testMax(args);
+        Assertions.assertEquals(5, result);
     }
-
     @Test
-    public void givenIntegers_whenMaxAtSecond_ReturnSame() {
-        MaximumCheck<Integer> maximumCheck = new MaximumCheck<Integer>(2,3,1);
-        Integer result = maximumCheck.testMax();
-        Assertions.assertEquals(3, result);
+    public void givenIntegers_whenMaxAtSecond_ReturnSame(){
+        MaximumCheck<Integer> integerMaximumCheck = new MaximumCheck<Integer>();
+        Integer [] args = {3, 5, 2,1};
+        Integer result = integerMaximumCheck.testMax(args);
+        Assertions.assertEquals(5, result);
     }
     @Test
     public void givenIntegers_whenMaxAtThird_ReturnSame() {
-        MaximumCheck<Integer> maximumCheck = new MaximumCheck<Integer>(1,2,3);
-        Integer result = maximumCheck.testMax();
-        Assertions.assertEquals(3, result);
+        MaximumCheck<Integer>integerMaximumCheck = new MaximumCheck<Integer>();
+        Integer [] args = {3, 2,1, 5};
+        Integer result = integerMaximumCheck.testMax(args);
+        Assertions.assertEquals(5, result);
     }
     @Test
     public void givenFloats_whenMaxAtFirst_ReturnSame() {
-        MaximumCheck<Float> maximumCheck = new MaximumCheck<Float>(3.2f,1.2f,2.2f);
-        Float result = maximumCheck.testMax();
-        Assertions.assertEquals(3.2f, result);
+        MaximumCheck<Float> floatMaximumCheck = new MaximumCheck<Float>();
+        Float [] args = {5.2f, 3.2f, 2.2f};
+        Float result = floatMaximumCheck.testMax(args);
+        Assertions.assertEquals(5.2f, result);
     }
     @Test
-    public void givenFloats_whenMaxAtSecond_ReturnSame() {
-        MaximumCheck<Float> maximumCheck = new MaximumCheck<Float>(2.2f,3.2f,1.2f);
-        Float result = maximumCheck.testMax();
-        Assertions.assertEquals(3.2f, result);
+    public void givenFloats_whenMaxAtSecond_ReturnSame()  {
+        MaximumCheck<Float> floatMaximumCheck = new MaximumCheck<Float>();
+        Float [] args = {3.2f, 5.2f, 2.2f};
+        Float result = floatMaximumCheck.testMax(args);
+        Assertions.assertEquals(5.2f, result);
     }
     @Test
     public void givenFloats_whenMaxAtThird_ReturnSame() {
-        MaximumCheck<Float> maximumCheck = new MaximumCheck<Float>(1.2f,2.2f,3.2f);
-        Float result = maximumCheck.testMax();
-        Assertions.assertEquals(3.2f, result);
+        MaximumCheck<Float> floatMaximumCheck = new MaximumCheck<Float>();
+        Float [] args = {3.2f, 2.2f, 5.2f};
+        Float result = floatMaximumCheck.testMax(args);
+        Assertions.assertEquals(5.2f, result);
     }
     @Test
-    public void givenStrings_whenMaxAtFirst_ReturnSame() {
-        MaximumCheck<String> maximumCheck = new MaximumCheck<String>("peach","apple","banana");
-        String result = maximumCheck.testMax();
-        Assertions.assertEquals("peach", result);
+    public void givenStrings_whenMaxAtFirst_ReturnSame(){
+        MaximumCheck<String> stringMaximumCheck = new MaximumCheck<String>();
+        String [] args = {"Plum", "Apple", "Banana"};
+        String result =stringMaximumCheck.testMax(args);
+        Assertions.assertEquals("Plum", result);
     }
     @Test
-    public void givenStrings_whenMaxAtSecond_ReturnSame() {
-        MaximumCheck<String> maximumCheck = new MaximumCheck<String>("apple","peach","banana");
-        String result = maximumCheck.testMax();
-        Assertions.assertEquals("peach", result);
+    public void givenStrings_whenMaxAtSecond_ReturnSame(){
+        MaximumCheck<String> stringMaximumCheck = new MaximumCheck<String>();
+        String [] args = {"Apple", "Plum", "Banana"};
+        String result = stringMaximumCheck.testMax(args);
+        Assertions.assertEquals("Plum", result);
     }
+
     @Test
-    public void givenStrings_whenMaxAtThird_ReturnSame() {
-        MaximumCheck<String> maximumCheck = new MaximumCheck<String>("peach","banana","peach");
-        String result = maximumCheck.testMax();
-        Assertions.assertEquals("peach", result);
+    public void givenStrings_whenMaxAtThird_ReturnSame()  {
+        MaximumCheck<String>stringMaximumCheck = new MaximumCheck<String>();
+        String [] args = {"Banana", "Apple", "Plum"};
+        String result = stringMaximumCheck.testMax(args);
+        Assertions.assertEquals("Plum", result);
     }
 }
