@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MaximumCheckTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-04-13T08:25:37" hostname="LAPTOP-TLTN6P2Q" time="0.103">
+<testsuite name="MaximumCheckTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-04-13T08:42:37" hostname="LAPTOP-TLTN6P2Q" time="0.049">
   <properties/>
-  <testcase name="givenStrings_whenMaxAtThird_ReturnSame()" classname="MaximumCheckTest" time="0.044"/>
-  <testcase name="givenStrings_whenMaxAtSecond_ReturnSame()" classname="MaximumCheckTest" time="0.007"/>
-  <testcase name="givenIntegers_whenMaxAtFirst_ReturnSame()" classname="MaximumCheckTest" time="0.006"/>
-  <testcase name="givenFloats_whenMaxAtFirst_ReturnSame()" classname="MaximumCheckTest" time="0.005"/>
-  <testcase name="givenStrings_whenMaxAtFirst_ReturnSame()" classname="MaximumCheckTest" time="0.002"/>
-  <testcase name="givenIntegers_whenMaxAtSecond_ReturnSame()" classname="MaximumCheckTest" time="0.002"/>
-  <testcase name="givenFloats_whenMaxAtSecond_ReturnSame()" classname="MaximumCheckTest" time="0.002"/>
-  <testcase name="givenIntegers_whenMaxAtThird_ReturnSame()" classname="MaximumCheckTest" time="0.002"/>
-  <testcase name="givenFloats_whenMaxAtThird_ReturnSame()" classname="MaximumCheckTest" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenStrings_whenMaxAtThird_ReturnSame()" classname="MaximumCheckTest" time="0.03"/>
+  <testcase name="givenStrings_whenMaxAtSecond_ReturnSame()" classname="MaximumCheckTest" time="0.001"/>
+  <testcase name="givenIntegers_whenMaxAtFirst_ReturnSame()" classname="MaximumCheckTest" time="0.001"/>
+  <testcase name="givenFloats_whenMaxAtFirst_ReturnSame()" classname="MaximumCheckTest" time="0.003"/>
+  <testcase name="givenStrings_whenMaxAtFirst_ReturnSame()" classname="MaximumCheckTest" time="0.001"/>
+  <testcase name="givenIntegers_whenMaxAtSecond_ReturnSame()" classname="MaximumCheckTest" time="0.001"/>
+  <testcase name="givenFloats_whenMaxAtSecond_ReturnSame()" classname="MaximumCheckTest" time="0.001"/>
+  <testcase name="givenIntegers_whenMaxAtThird_ReturnSame()" classname="MaximumCheckTest" time="0.001"/>
+  <testcase name="givenFloats_whenMaxAtThird_ReturnSame()" classname="MaximumCheckTest" time="0.002"/>
+  <system-out><![CDATA[maximum is :Plum
+maximum is :Plum
+maximum is :5
+maximum is :5.2
+maximum is :Plum
+maximum is :5
+maximum is :5.2
+maximum is :5
+maximum is :5.2
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -10,4 +10,11 @@ public class MaximumCheck<T extends Comparable<T>> {
         max = args[args.length - 1];
         return max;
     }
+    public void printMax(){
+        System.out.println("maximum is :" + max);
+    }
+    public static void main(String[] args){
+        MaximumCheck maximumCheck = new MaximumCheck();
+        maximumCheck.printMax();
+    }
 }
